@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinmay Deosthali</title>
+    <title>Chinmay Deosthali - Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body { 
@@ -11,15 +11,19 @@
             margin: 0; 
             padding: 0; 
             color: #333; 
+        }
+        .main-container {
             display: flex;
             flex-wrap: wrap;
+            max-width: 1200px; /* Adjust based on your preference */
+            margin: auto;
         }
         .left-column, .right-column {
-            flex-basis: 50%;
+            flex: 1; /* Adjust this value to control the column width */
             padding: 20px;
         }
         .section { 
-            margin-bottom: 20px;
+            margin-bottom: 20px; 
         }
         header { 
             background: #f4f4f4; 
@@ -29,7 +33,8 @@
         }
         .profile-section, .education-section, .skills-section, .experience-section, .projects-section { 
             background: #f4f4f4; 
-            margin: 15px 0;
+            padding: 15px;
+            margin-bottom: 20px;
         }
         footer { 
             background: #333; 
@@ -55,85 +60,88 @@
         </div>
     </header>
     
-    <div class="left-column">
-        <div class="profile-section section">
-            <p>Software engineer with an MS in Computer Science from the University of Georgia and 4 years of professional expertise in software development. Experienced in Agile methodologies, Test Driven Development (TDD) with a proven ability to adapt to different technologies.</p>
+    <div class="main-container">
+        <div class="left-column">
+            <div class="profile-section section">
+                <p>Software engineer with an MS in Computer Science from the University of Georgia and 4 years of professional expertise in software development. Experienced in Agile methodologies, Test Driven Development (TDD) with a proven ability to adapt to different technologies.</p>
+            </div>
+            
+            <div class="education-section section">
+                <h2>Education</h2>
+                <h3>University of Georgia, Athens, GA, USA GPA: 3.96/4.0 (August 2019 - August 2021)</h3>
+                <p>Master’s in Computer Science</p>
+                <h3>University of Mumbai, Mumbai, India GPA: 3.4/4.0  (August 2013 - May 2017)</h3>
+                <p>Bachelor of Engineering in Computer Engineering</p>
+            </div>
         </div>
         
-        <div class="education-section section">
-            <h2>Education</h2>
-            <h3>University of Georgia, Athens, GA, USA GPA: 3.96/4.0 (August 2019 - August 2021)</h3>
-            <p>Master’s in Computer Science</p>
-            <h3>University of Mumbai, Mumbai, India GPA: 3.4/4.0  (August 2013 - May 2017)</h3>
-            <p>Bachelor of Engineering in Computer Engineering</p>
-        </div>
-    </div>
+        <div class="right-column">
+            <div class="skills-section section">
+                <h2>Skills</h2>
+                <ul>
+                    <li class="list-item">Languages: Java, C++, JavaScript, Python, SQL, HTML5, CSS, Rust, Scala</li>
+                    <li class="list-item">Frameworks/Libraries: Spring Boot, JSF, Hibernate, React, Angular, JSP-Servlet, Behave BDD, Play 2, Tensorflow</li>
+                    <li class="list-item">Databases/Platforms: MySQL, Oracle database, MongoDB, AWS, Google Cloud, Apache Spark, Docker, Kubernetes, Kafka</li>
+                    <li class="list-item">IDE/Tools: Git, Visual Studio, IntelliJ IDEA, VS Code, Eclipse, R Studio, Smallworld GIS, Putty, WinSCP</li>
+                </ul>
+            </div>
+
+            <div class="experience-section section">
+                <h2>Professional Work Experience</h2>
+                <h3>Software Engineer, NCR Voyix, Atlanta, GA, USA (February 2022 - September 2023)</h3>
+                <ul>
+                    <li class="list-item">Spearheaded the development of features and resolution of bugs for two distinctive Windows-based products: RPOS and Epsilon, emphasizing Test Driven Development in an Agile setting.</li>
+                    <li class="list-item">Developed a feature for RPOS that enabled loyalty systems to apply rewards based on the quantity of units in a Multipack item.</li>
+                    <li class="list-item">Led the design and development of a secure encrypted card transaction feature in Epsilon, ensuring robust and secure financial transactions.</li>
+                    <li class="list-item">Executed automation using Python in a Behave BDD framework and conducted manual testing for RPOS, Epsilon, and Fuel pumps software.</li>
+                    <li class="list-item">Coordinated with clients and third parties for comprehensive end-to-end testing for integrating a new EMV payment card into the system.</li>
+                </ul>
+                
+                <h3>Software Engineer (Java), Bectran Inc, Greater Chicago Area, USA (October 2021 - January 2022)</h3>
+                <ul>
+                    <li class="list-item">Engineered features and resolved bugs for a B2B Credit Processing SaaS solution, utilizing Java, Hibernate, JSF, PrimeFaces, Bootstrap, and JavaScript.</li>
+                    <li class="list-item">Conceptualized and executed the integration of a pivotal Driver's License Verification feature within the credit application workflow.</li>
+                </ul>
     
-    <div class="right-column">
-        <div class="skills-section section">
-            <h2>Skills</h2>
-            <ul>
-                <li class="list-item">Languages: Java, C++, JavaScript, Python, SQL, HTML5, CSS, Rust, Scala</li>
-                <li class="list-item">Frameworks/Libraries: Spring Boot, JSF, Hibernate, React, Angular, JSP-Servlet, Behave BDD, Play 2, Tensorflow</li>
-                <li class="list-item">Databases/Platforms: MySQL, Oracle database, MongoDB, AWS, Google Cloud, Apache Spark, Docker, Kubernetes, Kafka</li>
-                <li class="list-item">IDE/Tools: Git, Visual Studio, IntelliJ IDEA, VS Code, Eclipse, R Studio, Smallworld GIS, Putty, WinSCP</li>
-            </ul>
+                <h3>Java Full Stack Developer, Tata Consultancy Services, Mumbai (TCS), India (June 2017 - July 2019)</h3>
+                <ul>
+                    <li class="list-item">Designed and developed a user-friendly web application using Java and the Spring framework for seamless data management.</li>
+                    <li class="list-item">Developed a Web portal in Java using Spring Boot that consolidated cost and location analysis, achieving a 50% improvement in operational efficiency.</li>
+                    <li class="list-item">Implemented SOAP and RESTful web services for cross-functional integration.</li>
+                    <li class="list-item">Maintained PL/SQL procedures and functions for database operations in an Oracle environment.</li>
+                </ul>
+            </div>
+    
+            <div class="projects-section section">
+                <h2>Projects</h2>
+                <h3>FMRI Image Processing on Spark and Serverless Computing  (June 2020 - December 2020)</h3>
+                <ul>
+                    <li class="list-item">Implemented distributed Rank-1 dictionary learning algorithm for FMRI Image Processing on a standalone machine, multi-node
+                        Spark cluster on the cloud, and Google cloud functions.</li>
+                    <li class="list-item">Performed comparative analysis in terms of cost and execution time for standalone, multi-node Spark cluster, Google cloud
+                        function executions on GCP and AWS Lambda.</li>
+                </ul>
+                
+                <h3>Compiler (Secure Programming)  (April 2021)</h3>
+                <ul>
+                    <li class="list-item">Implemented compiler development phases including Lexical and Syntax analysis, and Parse tree generation using C++.</li>
+                    <li class="list-item">Reduced the software vulnerabilities by 30%, by implementing the same phases in Rust language.</li>
+                    <li class="list-item">Used static and dynamic analysis tools like Cppcheck, Clang, and AFL for bug detection and reporting.</li>
+                </ul>
+    
+                <h3>Food Ordering System (DBMS)  (December 2019)</h3>
+                <ul>
+                    <li class="list-item">Developed and architected a software solution for a Food ordering System.</li>
+                    <li class="list-item">Designed and optimized database schema by using database normalization techniques such as BCNF, 3NF, and UML.</li>
+                    <li class="list-item">Created a web application in Play2 framework using Scala, HTML, CSS, JavaScript, JDBC API, MySQL.</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="experience-section section">
-            <h2>Professional Work Experience</h2>
-            <h3>Software Engineer, NCR Voyix, Atlanta, GA, USA (February 2022 - September 2023)</h3>
-            <ul>
-                <li class="list-item">Spearheaded the development of features and resolution of bugs for two distinctive Windows-based products: RPOS and Epsilon, emphasizing Test Driven Development in an Agile setting.</li>
-                <li class="list-item">Developed a feature for RPOS that enabled loyalty systems to apply rewards based on the quantity of units in a Multipack item.</li>
-                <li class="list-item">Led the design and development of a secure encrypted card transaction feature in Epsilon, ensuring robust and secure financial transactions.</li>
-                <li class="list-item">Executed automation using Python in a Behave BDD framework and conducted manual testing for RPOS, Epsilon, and Fuel pumps software.</li>
-                <li class="list-item">Coordinated with clients and third parties for comprehensive end-to-end testing for integrating a new EMV payment card into the system.</li>
-            </ul>
-            
-            <h3>Software Engineer (Java), Bectran Inc, Greater Chicago Area, USA (October 2021 - January 2022)</h3>
-            <ul>
-                <li class="list-item">Engineered features and resolved bugs for a B2B Credit Processing SaaS solution, utilizing Java, Hibernate, JSF, PrimeFaces, Bootstrap, and JavaScript.</li>
-                <li class="list-item">Conceptualized and executed the integration of a pivotal Driver's License Verification feature within the credit application workflow.</li>
-            </ul>
-
-            <h3>Java Full Stack Developer, Tata Consultancy Services, Mumbai (TCS), India (June 2017 - July 2019)</h3>
-            <ul>
-                <li class="list-item">Designed and developed a user-friendly web application using Java and the Spring framework for seamless data management.</li>
-                <li class="list-item">Developed a Web portal in Java using Spring Boot that consolidated cost and location analysis, achieving a 50% improvement in operational efficiency.</li>
-                <li class="list-item">Implemented SOAP and RESTful web services for cross-functional integration.</li>
-                <li class="list-item">Maintained PL/SQL procedures and functions for database operations in an Oracle environment.</li>
-            </ul>
-        </div>
-
-        <div class="projects-section section">
-            <h2>Projects</h2>
-            <h3>FMRI Image Processing on Spark and Serverless Computing  (June 2020 - December 2020)</h3>
-            <ul>
-                <li class="list-item">Implemented distributed Rank-1 dictionary learning algorithm for FMRI Image Processing on a standalone machine, multi-node
-                    Spark cluster on the cloud, and Google cloud functions.</li>
-                <li class="list-item">Performed comparative analysis in terms of cost and execution time for standalone, multi-node Spark cluster, Google cloud
-                    function executions on GCP and AWS Lambda.</li>
-            </ul>
-            
-            <h3>Compiler (Secure Programming)  (April 2021)</h3>
-            <ul>
-                <li class="list-item">Implemented compiler development phases including Lexical and Syntax analysis, and Parse tree generation using C++.</li>
-                <li class="list-item">Reduced the software vulnerabilities by 30%, by implementing the same phases in Rust language.</li>
-                <li class="list-item">Used static and dynamic analysis tools like Cppcheck, Clang, and AFL for bug detection and reporting.</li>
-            </ul>
-
-            <h3>Food Ordering System (DBMS)  (December 2019)</h3>
-            <ul>
-                <li class="list-item">Developed and architected a software solution for a Food ordering System.</li>
-                <li class="list-item">Designed and optimized database schema by using database normalization techniques such as BCNF, 3NF, and UML.</li>
-                <li class="list-item">Created a web application in Play2 framework using Scala, HTML, CSS, JavaScript, JDBC API, MySQL.</li>
-            </ul>
-        </div>
+    
     </div>
 
     <footer>
-        <div class="container">
+        <div>
             <p>Connect with me on <a href="https://www.linkedin.com/in/chinmaydeosthali" style="color: #fff;">LinkedIn</a></p>
         </div>
     </footer>
