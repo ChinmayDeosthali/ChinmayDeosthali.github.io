@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinmay Deosthali</title>
+    <title>Chinmay Deosthali - Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; color: #333; }
         .section { padding: 40px 0; }
         .container { width: 80%; margin: auto; overflow: hidden; }
         header, .profile-section { background: #f4f4f4; text-align: center; padding: 20px 0; }
-        header h1 { margin: 0; }
-        .profile-section p { margin: 15px 0; }
-        nav a, footer a { color: #0779e4; text-decoration: none; }
-        .experience-item, .education-item, .project-item { margin-bottom: 20px; }
+        header h1, .profile-section p { margin: 15px 0; }
+        .list-item { margin-left: 20px; list-style: inside disc; }
         footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
     </style>
 </head>
@@ -21,58 +19,41 @@
     <header>
         <div class="container">
             <h1>Chinmay Deosthali</h1>
+            <p>+1 (662) 715-9316 | Atlanta, GA, USA | <a href="mailto:deosthali.chinmay6@gmail.com">deosthali.chinmay6@gmail.com</a> | <a href="https://www.linkedin.com/in/chinmaydeosthali">LinkedIn</a></p>
         </div>
     </header>
 
     <div class="profile-section">
         <div class="container">
-            <p>+1 (662) 715-9316 | Atlanta, GA, USA | <a href="mailto:deosthali.chinmay6@gmail.com">deosthali.chinmay6@gmail.com</a> | <a href="https://www.linkedin.com/in/chinmaydeosthali">LinkedIn</a></p>
-            <p>Software engineer with an MS in Computer Science from the University of Georgia and 4 years of professional expertise in software development. Experienced in Agile methodologies, Test Driven Development (TDD) with proven ability to adapt to different technologies.</p>
+            <p>Software engineer with an MS in Computer Science from the University of Georgia and 4 years of professional expertise in software development. Experienced in Agile methodologies, Test Driven Development (TDD) with a proven ability to adapt to different technologies.</p>
         </div>
     </div>
     
     <section class="section" id="experience">
         <div class="container">
             <h2>Professional Work Experience</h2>
-            <!-- Example Experience Item -->
-            <div class="experience-item">
-                <h3>Software Engineer, NCR Voyix, Atlanta, GA, USA</h3>
-                <p>February 2022 - September 2023</p>
-                <p>Spearheaded the development of features and bug resolutions for RPOS and Epsilon software, emphasizing TDD and Agile methodologies. Led the integration of a new EMV payment card into the system, enhancing transaction security.</p>
-            </div>
-            <!-- Additional experiences based on the resume -->
-        </div>
-    </section>
-    
-    <section class="section" id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Master’s in Computer Science - University of Georgia, Athens, GA, USA</h3>
-                <p>GPA: 3.96/4.0 | August 2021</p>
-            </div>
-            <!-- Additional education entries -->
-        </div>
-    </section>
-    
-    <section class="section" id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <p>Languages: Java, C++, JavaScript, Python, SQL, HTML5, CSS, Rust, Scala</p>
-            <p>Frameworks/Libraries: Spring Boot, JSF, Hibernate, React, Angular, JSP-Servlet, Behave BDD, Play 2, Tensorflow</p>
-            <p>Databases/Platforms: MySQL, Oracle database, MongoDB, AWS, Google Cloud, Apache Spark, Docker, Kubernetes, Kafka</p>
-            <p>IDE/Tools: Git, Visual Studio, IntelliJ IDEA, VS Code, Eclipse, R Studio, Smallworld GIS, Putty, WinSCP</p>
-        </div>
-    </section>
-    
-    <section class="section" id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>FMRI Image Processing on Spark and Serverless Computing</h3>
-                <p>Implemented a distributed Rank-1 dictionary learning algorithm for FMRI Image Processing, significantly improving data processing efficiency and reducing operational costs.</p>
-            </div>
-            <!-- Additional project entries -->
+            <h3>Software Engineer, NCR Voyix, Atlanta, GA, USA (February 2022 - September 2023)</h3>
+            <ul>
+                <li class="list-item">Spearheaded the development of features and resolution of bugs for two distinctive Windows-based products: RPOS and Epsilon, emphasizing Test Driven Development in an Agile setting.</li>
+                <li class="list-item">Developed a feature for RPOS that enabled loyalty systems to apply rewards based on the quantity of units in a Multipack item.</li>
+                <li class="list-item">Led the design and development of a secure encrypted card transaction feature in Epsilon, ensuring robust and secure financial transactions.</li>
+                <li class="list-item">Executed automation using Python in a Behave BDD framework and conducted manual testing for RPOS, Epsilon, and Fuel pumps software.</li>
+                <li class="list-item">Coordinated with clients and third parties for comprehensive end-to-end testing for integrating a new EMV payment card into the system.</li>
+            </ul>
+            
+            <h3>Software Engineer (Java), Bectran Inc, Greater Chicago Area, USA (October 2021 - January 2022)</h3>
+            <ul>
+                <li class="list-item">Engineered features and resolved bugs for a B2B Credit Processing SaaS solution, utilizing Java, Hibernate, JSF, PrimeFaces, Bootstrap, and JavaScript.</li>
+                <li class="list-item">Conceptualized and executed the integration of a pivotal Driver's License Verification feature within the credit application workflow.</li>
+            </ul>
+
+            <h3>Java Full Stack Developer, Tata Consultancy Services, Mumbai (TCS), India (June 2017 - July 2019)</h3>
+            <ul>
+                <li class="list-item">Designed and developed a user-friendly web application using Java and the Spring framework for seamless data management.</li>
+                <li class="list-item">Developed a Web portal in Java using Spring Boot that consolidated cost and location analysis, achieving a 50% improvement in operational efficiency.</li>
+                <li class="list-item">Implemented SOAP and RESTful web services for cross-functional integration.</li>
+                <li class="list-item">Maintained PL/SQL procedures and functions for database operations in an Oracle environment.</li>
+            </ul>
         </div>
     </section>
     
