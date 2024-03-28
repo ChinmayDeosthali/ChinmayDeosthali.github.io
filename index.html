@@ -3,34 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinmay Deosthali - Professional Portfolio</title>
+    <title>Chinmay Deosthali</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; color: #333; }
-        .section { padding: 40px 0; }
-        .container { width: 80%; margin: auto; overflow: hidden; }
-        header, .profile-section { background: #f4f4f4; text-align: center; padding: 20px 0; }
-        header h1, .profile-section p { margin: 15px 0; }
-        .list-item { margin-left: 20px; list-style: inside disc; }
-        footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left-column, .right-column {
+            flex-basis: 50%;
+            padding: 20px;
+        }
+        .section { 
+            margin-bottom: 20px;
+        }
+        header { 
+            background: #f4f4f4; 
+            text-align: center; 
+            padding: 20px 0; 
+            width: 100%;
+        }
+        .profile-section, .education-section, .skills-section, .experience-section, .projects-section { 
+            background: #f4f4f4; 
+            margin: 15px 0;
+        }
+        footer { 
+            background: #333; 
+            color: #fff; 
+            text-align: center; 
+            padding: 10px 0; 
+            width: 100%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-item {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div>
             <h1>Chinmay Deosthali</h1>
             <p>+1 (662) 715-9316 | Atlanta, GA, USA | <a href="mailto:deosthali.chinmay6@gmail.com">deosthali.chinmay6@gmail.com</a> | <a href="https://www.linkedin.com/in/chinmaydeosthali">LinkedIn</a></p>
         </div>
     </header>
-
-    <div class="profile-section">
-        <div class="container">
+    
+    <div class="left-column">
+        <div class="profile-section section">
             <p>Software engineer with an MS in Computer Science from the University of Georgia and 4 years of professional expertise in software development. Experienced in Agile methodologies, Test Driven Development (TDD) with a proven ability to adapt to different technologies.</p>
+        </div>
+        
+        <div class="education-section section">
+            <h2>Education</h2>
+            <h3>University of Georgia, Athens, GA, USA GPA: 3.96/4.0 (August 2019 - August 2021)</h3>
+            <p>Master’s in Computer Science</p>
+            <h3>University of Mumbai, Mumbai, India GPA: 3.4/4.0  (August 2013 - May 2017)</h3>
+            <p>Bachelor of Engineering in Computer Engineering</p>
         </div>
     </div>
     
-    <section class="section" id="experience">
-        <div class="container">
+    <div class="right-column">
+        <div class="skills-section section">
+            <h2>Skills</h2>
+            <ul>
+                <li class="list-item">Languages: Java, C++, JavaScript, Python, SQL, HTML5, CSS, Rust, Scala</li>
+                <li class="list-item">Frameworks/Libraries: Spring Boot, JSF, Hibernate, React, Angular, JSP-Servlet, Behave BDD, Play 2, Tensorflow</li>
+                <li class="list-item">Databases/Platforms: MySQL, Oracle database, MongoDB, AWS, Google Cloud, Apache Spark, Docker, Kubernetes, Kafka</li>
+                <li class="list-item">IDE/Tools: Git, Visual Studio, IntelliJ IDEA, VS Code, Eclipse, R Studio, Smallworld GIS, Putty, WinSCP</li>
+            </ul>
+        </div>
+
+        <div class="experience-section section">
             <h2>Professional Work Experience</h2>
             <h3>Software Engineer, NCR Voyix, Atlanta, GA, USA (February 2022 - September 2023)</h3>
             <ul>
@@ -55,35 +105,8 @@
                 <li class="list-item">Maintained PL/SQL procedures and functions for database operations in an Oracle environment.</li>
             </ul>
         </div>
-    </section>
 
-    <section class="section" id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <h3>University of Georgia, Athens, GA, USA GPA: 3.96/4.0 (August 2019 - August 2021)</h3>
-            <p>Master’s in Computer Science</p>
-
-            <h3>University of Mumbai, Mumbai, India GPA: 3.4/4.0  (August 2013 - May 2017)</h3>
-            <p>Bachelor of Engineering in Computer Engineering</p>
-            
-        </div>
-    </section>
-
-    <section class="section" id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li class="list-item">Languages: Java, C++, JavaScript, Python, SQL, HTML5, CSS, Rust, Scala</li>
-                <li class="list-item">Frameworks/Libraries: Spring Boot, JSF, Hibernate, React, Angular, JSP-Servlet, Behave BDD, Play 2, Tensorflow</li>
-                <li class="list-item">Databases/Platforms: MySQL, Oracle database, MongoDB, AWS, Google Cloud, Apache Spark, Docker, Kubernetes, Kafka</li>
-                <li class="list-item">Git, Visual Studio, IntelliJ IDEA, VS Code, Eclipse, R Studio, Smallworld GIS, Putty, WinSCP</li>
-            </ul>
-
-        </div>
-    </section>
-
-    <section class="section" id="projects">
-        <div class="container">
+        <div class="projects-section section">
             <h2>Projects</h2>
             <h3>FMRI Image Processing on Spark and Serverless Computing  (June 2020 - December 2020)</h3>
             <ul>
@@ -107,8 +130,8 @@
                 <li class="list-item">Created a web application in Play2 framework using Scala, HTML, CSS, JavaScript, JDBC API, MySQL.</li>
             </ul>
         </div>
-    </section>
-    
+    </div>
+
     <footer>
         <div class="container">
             <p>Connect with me on <a href="https://www.linkedin.com/in/chinmaydeosthali" style="color: #fff;">LinkedIn</a></p>
